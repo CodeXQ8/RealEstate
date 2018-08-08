@@ -8,8 +8,10 @@
 
 import UIKit
 
-class Setting: UIViewController {
+class Explore: UIViewController {
 
+    var indexCell : Int = 0 
+    
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,7 @@ class Setting: UIViewController {
 
 }
 
-extension Setting: UICollectionViewDelegate, UICollectionViewDataSource {
+extension Explore: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -51,19 +53,19 @@ extension Setting: UICollectionViewDelegate, UICollectionViewDataSource {
         
     }
     
-    //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    //        self.indexCell = indexPath.item
-    //        performSegue(withIdentifier: "songListSegue", sender: self)
-    //
-    //    }
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        if let songListVC = segue.destination as? SongListVC {
-    //            songListVC.indexCell = self.indexCell
-    //            songListVC.reciter = reciters?[indexCell]
-    //        }
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            self.indexCell = indexPath.item
+            performSegue(withIdentifier: "MoreDescriptionSegue", sender: self)
     
-    //}
+        }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let MoreDescriptionVC = segue.destination as? MoreDescription {
+                MoreDescriptionVC.indexCell = self.indexCell
+                
+            }
     
+    }
+
 }
 
 
