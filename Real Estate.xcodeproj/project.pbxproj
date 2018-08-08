@@ -12,6 +12,7 @@
 		BE028D2B211A69D100DF03ED /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE028D2A211A69D100DF03ED /* CollectionCell.swift */; };
 		BE028D2E211A6E4C00DF03ED /* DesignableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE028D2D211A6E4C00DF03ED /* DesignableImage.swift */; };
 		BE028D30211A6E8800DF03ED /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE028D2F211A6E8800DF03ED /* DesignableButton.swift */; };
+		BE0A018B211B0E9700D5D9B3 /* AddingPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A018A211B0E9700D5D9B3 /* AddingPhoto.swift */; };
 		BE5773EA211AE48C00744416 /* MoreDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5773E9211AE48C00744416 /* MoreDescription.swift */; };
 		BE7892DE21185BEC002F4521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7892DD21185BEC002F4521 /* AppDelegate.swift */; };
 		BE7892E321185BEC002F4521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7892E121185BEC002F4521 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		BE028D2A211A69D100DF03ED /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		BE028D2D211A6E4C00DF03ED /* DesignableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImage.swift; sourceTree = "<group>"; };
 		BE028D2F211A6E8800DF03ED /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		BE0A018A211B0E9700D5D9B3 /* AddingPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingPhoto.swift; sourceTree = "<group>"; };
 		BE5773E9211AE48C00744416 /* MoreDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDescription.swift; sourceTree = "<group>"; };
 		BE7892DA21185BEC002F4521 /* Real Estate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real Estate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7892DD21185BEC002F4521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				BE028D25211A686200DF03ED /* Home.swift */,
 				BEA37C2C211A75CD006D4342 /* Explore.swift */,
 				BE5773E9211AE48C00744416 /* MoreDescription.swift */,
+				BE0A018A211B0E9700D5D9B3 /* AddingPhoto.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				BE028D26211A686200DF03ED /* Home.swift in Sources */,
 				BE028D2E211A6E4C00DF03ED /* DesignableImage.swift in Sources */,
 				BEA37C2D211A75CD006D4342 /* Explore.swift in Sources */,
+				BE0A018B211B0E9700D5D9B3 /* AddingPhoto.swift in Sources */,
 				BE7892DE21185BEC002F4521 /* AppDelegate.swift in Sources */,
 				BE028D30211A6E8800DF03ED /* DesignableButton.swift in Sources */,
 				BE028D2B211A69D100DF03ED /* CollectionCell.swift in Sources */,
