@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="noj-LQ-DKY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sgx-ry-q8g">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -481,24 +481,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzv-ki-znM" customClass="DesignableButton" customModule="Real_Estate" customModuleProvider="target">
-                                <rect key="frame" x="16" y="686" width="157" height="50"/>
-                                <color key="backgroundColor" red="0.14117647059999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="Jtk-g6-UxY"/>
-                                    <constraint firstAttribute="height" constant="50" id="USq-5p-5P6"/>
-                                    <constraint firstAttribute="width" constant="157" id="XJL-1e-UvZ"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="tgF-OF-qXC"/>
-                                </constraints>
-                                <state key="normal" title="Add Photo">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzS-Vj-7UP">
                                 <rect key="frame" x="15" y="217" width="200" height="40"/>
                                 <constraints>
@@ -518,17 +500,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzv-ki-znM" customClass="DesignableButton" customModule="Real_Estate" customModuleProvider="target">
+                                <rect key="frame" x="15" y="382" width="157" height="50"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BgS-EM-j5J"/>
+                                    <constraint firstAttribute="width" constant="157" id="T2H-h8-F2u"/>
+                                </constraints>
+                                <state key="normal" title="Add Photo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IdQ-ih-vAB" firstAttribute="trailing" secondItem="LvI-pO-1eE" secondAttribute="trailing" constant="15" id="63e-vi-gHx"/>
+                            <constraint firstItem="Kzv-ki-znM" firstAttribute="top" secondItem="LvI-pO-1eE" secondAttribute="bottom" constant="90" id="77f-EW-hvk"/>
                             <constraint firstItem="LvI-pO-1eE" firstAttribute="leading" secondItem="IdQ-ih-vAB" secondAttribute="leading" constant="15" id="7r3-Ax-K3d"/>
                             <constraint firstItem="AzS-Vj-7UP" firstAttribute="leading" secondItem="IdQ-ih-vAB" secondAttribute="leading" constant="15" id="IpM-lZ-zjk"/>
+                            <constraint firstItem="Kzv-ki-znM" firstAttribute="leading" secondItem="IdQ-ih-vAB" secondAttribute="leading" constant="15" id="Jnf-Bv-dW7"/>
                             <constraint firstItem="gue-Sk-saT" firstAttribute="top" secondItem="IdQ-ih-vAB" secondAttribute="top" constant="10" id="L8D-FS-zS0"/>
                             <constraint firstItem="AzS-Vj-7UP" firstAttribute="top" secondItem="e0x-rg-ZCv" secondAttribute="bottom" constant="15" id="OeJ-nM-nqo"/>
                             <constraint firstItem="ofR-KI-KeG" firstAttribute="top" secondItem="IdQ-ih-vAB" secondAttribute="top" constant="12" id="S7u-j1-z4S"/>
                             <constraint firstItem="gue-Sk-saT" firstAttribute="leading" secondItem="IdQ-ih-vAB" secondAttribute="leading" constant="15" id="UNx-xc-dRp"/>
-                            <constraint firstItem="Kzv-ki-znM" firstAttribute="leading" secondItem="IdQ-ih-vAB" secondAttribute="leading" constant="15" id="gcs-uT-TvT"/>
                             <constraint firstItem="e0x-rg-ZCv" firstAttribute="leading" secondItem="IdQ-ih-vAB" secondAttribute="leading" constant="15" id="oZM-qT-l9X"/>
                             <constraint firstItem="e0x-rg-ZCv" firstAttribute="top" secondItem="ofR-KI-KeG" secondAttribute="bottom" constant="10" id="p74-OE-rhg"/>
                             <constraint firstItem="IdQ-ih-vAB" firstAttribute="trailing" secondItem="ofR-KI-KeG" secondAttribute="trailing" constant="15" id="sJG-BW-D7J"/>
@@ -1073,10 +1072,10 @@
             </objects>
             <point key="canvasLocation" x="-159" y="1625"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up-->
         <scene sceneID="h5q-Cr-dLK">
             <objects>
-                <viewController id="JgM-UP-Yfn" sceneMemberID="viewController">
+                <viewController id="JgM-UP-Yfn" customClass="SignUp" customModule="Real_Estate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KtH-pU-KuH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1191,6 +1190,10 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="SignUpBtn:" destination="JgM-UP-Yfn" eventType="touchUpInside" id="Z29-J9-Hgf"/>
+                                            <action selector="signUpBtn:" destination="JgM-UP-Yfn" eventType="touchUpInside" id="iR6-Im-C1J"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1224,15 +1227,19 @@
                         <viewLayoutGuide key="safeArea" id="KSA-gt-sGe"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="ysz-im-JUc"/>
+                    <connections>
+                        <outlet property="emailField" destination="R3Y-IC-gcW" id="6uO-0g-1uz"/>
+                        <outlet property="passwordField" destination="o8X-0n-oV7" id="brj-6q-ox5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3RR-R0-DGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-839" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="Y5q-Yp-6xX">
             <objects>
-                <viewController id="noj-LQ-DKY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="noj-LQ-DKY" customClass="Login" customModule="Real_Estate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k82-ae-Ctq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1324,7 +1331,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="Sgx-ry-q8g" kind="show" id="RhI-ex-PYs"/>
+                                            <action selector="LoginBtn:" destination="noj-LQ-DKY" eventType="touchUpInside" id="LVu-an-S2r"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="jgj-Ra-qqS">
@@ -1403,6 +1410,10 @@
                         <viewLayoutGuide key="safeArea" id="8w5-lK-OvN"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="WkZ-rW-8m2"/>
+                    <connections>
+                        <outlet property="emailField" destination="9OO-3K-vlK" id="7hh-kq-NM9"/>
+                        <outlet property="passwordField" destination="0yN-XB-uQt" id="sJc-3p-d00"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgF-aW-crj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1423,6 +1434,7 @@
         <image name="icons8-surface-26" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="emI-V0-hqI"/>
+        <segue reference="ngQ-vv-xQ5"/>
+        <segue reference="5H8-68-ipj"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -16,6 +16,8 @@
 		BE03A074211B96EE00C62796 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE03A073211B96EE00C62796 /* GoogleService-Info.plist */; };
 		BE03A076211B981600C62796 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03A075211B981600C62796 /* DataService.swift */; };
 		BE03A079211B9CDB00C62796 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03A078211B9CDB00C62796 /* AuthService.swift */; };
+		BE03A07B211B9EBC00C62796 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03A07A211B9EBC00C62796 /* Login.swift */; };
+		BE03A07F211BA24800C62796 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03A07E211BA24800C62796 /* SignUp.swift */; };
 		BE0A018B211B0E9700D5D9B3 /* AddingPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A018A211B0E9700D5D9B3 /* AddingPhoto.swift */; };
 		BE5773EA211AE48C00744416 /* MoreDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5773E9211AE48C00744416 /* MoreDescription.swift */; };
 		BE7892DE21185BEC002F4521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7892DD21185BEC002F4521 /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 		BE03A073211B96EE00C62796 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE03A075211B981600C62796 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BE03A078211B9CDB00C62796 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BE03A07A211B9EBC00C62796 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		BE03A07E211BA24800C62796 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		BE0A018A211B0E9700D5D9B3 /* AddingPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingPhoto.swift; sourceTree = "<group>"; };
 		BE5773E9211AE48C00744416 /* MoreDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDescription.swift; sourceTree = "<group>"; };
 		BE7892DA21185BEC002F4521 /* Real Estate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real Estate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,8 @@
 				BEA37C2C211A75CD006D4342 /* Explore.swift */,
 				BE5773E9211AE48C00744416 /* MoreDescription.swift */,
 				BE0A018A211B0E9700D5D9B3 /* AddingPhoto.swift */,
+				BE03A07A211B9EBC00C62796 /* Login.swift */,
+				BE03A07E211BA24800C62796 /* SignUp.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -274,10 +280,12 @@
 			files = (
 				BEC6E2FC211A8260009861FF /* designableCell.swift in Sources */,
 				BE028D26211A686200DF03ED /* Home.swift in Sources */,
+				BE03A07B211B9EBC00C62796 /* Login.swift in Sources */,
 				BE028D2E211A6E4C00DF03ED /* DesignableImage.swift in Sources */,
 				BE03A079211B9CDB00C62796 /* AuthService.swift in Sources */,
 				BE03A076211B981600C62796 /* DataService.swift in Sources */,
 				BEA37C2D211A75CD006D4342 /* Explore.swift in Sources */,
+				BE03A07F211BA24800C62796 /* SignUp.swift in Sources */,
 				BE0A018B211B0E9700D5D9B3 /* AddingPhoto.swift in Sources */,
 				BE7892DE21185BEC002F4521 /* AppDelegate.swift in Sources */,
 				BE028D30211A6E8800DF03ED /* DesignableButton.swift in Sources */,
