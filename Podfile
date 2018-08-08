@@ -8,6 +8,9 @@ target 'Real Estate' do
   use_frameworks!
 
   # Pods for Real Estate
-  pod "SHSearchBar"
+  pod "Firebase/Database"
+  pod "Firebase/Auth"
+  pod "Firebase/Core" 
+  
   
 end
