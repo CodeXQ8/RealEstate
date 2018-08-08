@@ -1,0 +1,16 @@
+PODS:
+  - SHSearchBar (1.4.1)
+
+DEPENDENCIES:
+  - SHSearchBar
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SHSearchBar
+
+SPEC CHECKSUMS:
+  SHSearchBar: 1e0cd12f142dc6b902c54fbd026c9a25945c3041
+
+PODFILE CHECKSUM: 8e4a4cf3f7f4fa4aca681f287dfbdc7b51040c2b
+
+COCOAPODS: 1.5.2
