@@ -1,4 +1,4 @@
-//
+
 //  Setting.swift
 //  Real Estate
 //
@@ -37,6 +37,7 @@ class Explore: UIViewController {
             }
         }
         logoutPopup.addAction(logoutAction)
+        logoutPopup.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         present(logoutPopup, animated: true, completion: nil)
     
     }

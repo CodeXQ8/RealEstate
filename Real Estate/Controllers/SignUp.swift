@@ -29,7 +29,7 @@ class SignUp: UIViewController {
                 AuthService.instance.registerUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, userCreationComplete: { (success, registrationError) in
                     if success {
                         AuthService.instance.loginUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, loginComplete: { (success, nil) in
-                            let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "ExploreVC")
+                            let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "ExploreVC") 
                             self.present(exploreVC!, animated: true, completion: nil)
                             print("Successfully registered user")
                         })

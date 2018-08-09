@@ -695,7 +695,7 @@
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV3-tP-Jaq" customClass="DesignableButton" customModule="Real_Estate" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="50" id="C01-H3-mwl"/>
                                                                 <constraint firstAttribute="height" constant="50" id="fqQ-Bn-he3"/>
@@ -703,7 +703,7 @@
                                                             <state key="normal" image="icons8-single-bed-30"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                                    <real key="value" value="70"/>
+                                                                    <real key="value" value="5"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
                                                                     <real key="value" value="0.0"/>
@@ -715,7 +715,7 @@
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiV-PE-Sf2" customClass="DesignableButton" customModule="Real_Estate" customModuleProvider="target">
                                                             <rect key="frame" x="93.666666666666671" y="0.0" width="50.000000000000014" height="50"/>
-                                                            <color key="backgroundColor" red="1" green="0.76470588235294112" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="SMW-ja-KVm"/>
                                                                 <constraint firstAttribute="width" constant="50" id="pOh-tB-BOx"/>
@@ -735,7 +735,7 @@
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUc-AQ-pON" customClass="DesignableButton" customModule="Real_Estate" customModuleProvider="target">
                                                             <rect key="frame" x="187.33333333333334" y="0.0" width="50" height="50"/>
-                                                            <color key="backgroundColor" red="1" green="0.73333333333333328" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="2To-Dc-9WV"/>
                                                                 <constraint firstAttribute="width" constant="50" id="Tw7-hV-2fF"/>
@@ -755,7 +755,7 @@
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssS-0w-F14" customClass="DesignableButton" customModule="Real_Estate" customModuleProvider="target">
                                                             <rect key="frame" x="281" y="0.0" width="50" height="50"/>
-                                                            <color key="backgroundColor" red="1" green="0.69803921568627447" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="5om-cI-Bik"/>
                                                                 <constraint firstAttribute="width" constant="50" id="iNf-LG-arm"/>

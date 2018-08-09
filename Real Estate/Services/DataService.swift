@@ -51,7 +51,6 @@ class DataService {
             REF_PROPERTIES.childByAutoId().updateChildValues(["Images": images, "senderId": uid])
             sendComplete(true)
         }
-    
 
     func getIds(forUsernames usernames: [String], handler: @escaping (_ uidArray: [String]) -> ()) {
         REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
