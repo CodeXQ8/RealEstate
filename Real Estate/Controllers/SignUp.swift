@@ -18,8 +18,7 @@ class SignUp: UIViewController {
 
         emailField.delegate = self
         passwordField.delegate = self
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
-        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
     
 
@@ -30,7 +29,8 @@ class SignUp: UIViewController {
                 AuthService.instance.registerUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, userCreationComplete: { (success, registrationError) in
                     if success {
                         AuthService.instance.loginUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, loginComplete: { (success, nil) in
-                            self.dismiss(animated: true, completion: nil)
+                            let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "ExploreVC")
+                            self.present(exploreVC!, animated: true, completion: nil)
                             print("Successfully registered user")
                         })
                     } else {
@@ -45,8 +45,15 @@ class SignUp: UIViewController {
 
 extension SignUp: UITextFieldDelegate {
     
-    func dismissKeyboard(){
+
+    @objc func dismissKeyboard(){
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        return true
     }
 }
