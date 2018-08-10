@@ -15,9 +15,9 @@ class AddingPhoto: UIViewController {
     }
 
  
-    @IBAction func exitBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+//    @IBAction func exitBtn(_ sender: Any) {
+//        self.dismiss(animated: true, completion: nil)
+//    }
     
 
 }

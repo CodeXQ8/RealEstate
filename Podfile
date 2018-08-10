@@ -11,6 +11,7 @@ target 'Real Estate' do
   pod "Firebase/Database"
   pod "Firebase/Auth"
   pod "Firebase/Core" 
-  
-  
+  pod "RealmSwift"
+
+ 
 end
