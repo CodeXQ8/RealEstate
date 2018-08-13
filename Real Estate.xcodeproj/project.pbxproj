@@ -22,6 +22,8 @@
 		BE043D1721211B2700D502F4 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE043D1621211B2700D502F4 /* MoreVC.swift */; };
 		BE043D1921211CD700D502F4 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE043D1821211CD700D502F4 /* SavedVC.swift */; };
 		BE0A018B211B0E9700D5D9B3 /* AddingPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A018A211B0E9700D5D9B3 /* AddingPhoto.swift */; };
+		BE0D4964212183840068C05E /* ViewControllerdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D4963212183840068C05E /* ViewControllerdd.swift */; };
+		BE0D4966212192EF0068C05E /* AddProteryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D4965212192EF0068C05E /* AddProteryVC.swift */; };
 		BE5773EA211AE48C00744416 /* MoreDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5773E9211AE48C00744416 /* MoreDescription.swift */; };
 		BE7892DE21185BEC002F4521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7892DD21185BEC002F4521 /* AppDelegate.swift */; };
 		BE7892E321185BEC002F4521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7892E121185BEC002F4521 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		BE043D1621211B2700D502F4 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		BE043D1821211CD700D502F4 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		BE0A018A211B0E9700D5D9B3 /* AddingPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingPhoto.swift; sourceTree = "<group>"; };
+		BE0D4963212183840068C05E /* ViewControllerdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerdd.swift; sourceTree = "<group>"; };
+		BE0D4965212192EF0068C05E /* AddProteryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProteryVC.swift; sourceTree = "<group>"; };
 		BE5773E9211AE48C00744416 /* MoreDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDescription.swift; sourceTree = "<group>"; };
 		BE7892DA21185BEC002F4521 /* Real Estate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real Estate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7892DD21185BEC002F4521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				BE043D1421210A9000D502F4 /* myProteriesVC.swift */,
 				BE043D1621211B2700D502F4 /* MoreVC.swift */,
 				BE043D1821211CD700D502F4 /* SavedVC.swift */,
+				BE0D4963212183840068C05E /* ViewControllerdd.swift */,
+				BE0D4965212192EF0068C05E /* AddProteryVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -307,6 +313,8 @@
 				BE043D1521210A9000D502F4 /* myProteriesVC.swift in Sources */,
 				BE028D2B211A69D100DF03ED /* CollectionCell.swift in Sources */,
 				BE03A072211B80DA00C62796 /* DesignableView.swift in Sources */,
+				BE0D4964212183840068C05E /* ViewControllerdd.swift in Sources */,
+				BE0D4966212192EF0068C05E /* AddProteryVC.swift in Sources */,
 				BE5773EA211AE48C00744416 /* MoreDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
