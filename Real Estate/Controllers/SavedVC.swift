@@ -1,42 +1,29 @@
-
-//  Setting.swift
+//
+//  SavedVC.swift
 //  Real Estate
 //
-//  Created by Nayef Alotaibi on 8/7/18.
+//  Created by Nayef Alotaibi on 8/12/18.
 //  Copyright © 2018 Nayef Alotaibi. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class Explore: UIViewController {
-
+class SavedVC: UIViewController {
     var indexCell : Int = 0
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         collectionView.delegate = self
         collectionView.dataSource = self
-        navifationSetUp()
-        
-    }
-    
-    
-    
-
-    
-    
-    func navifationSetUp(){
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
     }
 
 }
 
-extension Explore: UICollectionViewDelegate, UICollectionViewDataSource {
+extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -61,19 +48,18 @@ extension Explore: UICollectionViewDelegate, UICollectionViewDataSource {
         
     }
     
-        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            self.indexCell = indexPath.item
-            performSegue(withIdentifier: "MoreDescriptionSegue", sender: self)
-    
-        }
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if let MoreDescriptionVC = segue.destination as? MoreDescription {
-                MoreDescriptionVC.indexCell = self.indexCell
-                
-            }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.indexCell = indexPath.item
+        performSegue(withIdentifier: "SavedSegue", sender: self)
+        
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let MoreDescriptionVC = segue.destination as? MoreDescription {
+            MoreDescriptionVC.indexCell = self.indexCell
+            
+        }
+        
+    }
+    
 }
-
 
