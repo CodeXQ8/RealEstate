@@ -2,22 +2,21 @@
 //  MoreVC.swift
 //  Real Estate
 //
-//  Created by Nayef Alotaibi on 8/12/18.
+//  Created by Nayef Alotaibi on 8/13/18.
 //  Copyright © 2018 Nayef Alotaibi. All rights reserved.
 //
 
 import UIKit
 import Firebase
-
-class MoreVC: UIViewController {
+class MoreVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
     }
-
+    
     @IBAction func logoutBtn(_ sender: Any) {
         let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
         let logoutAction = UIAlertAction(title: "Logout?", style: .destructive) { (buttonTapped) in
@@ -34,5 +33,7 @@ class MoreVC: UIViewController {
         present(logoutPopup, animated: true, completion: nil)
         
     }
+
+
 
 }
