@@ -30,6 +30,7 @@
 		BE7892E521185BF5002F4521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7892E421185BF5002F4521 /* Assets.xcassets */; };
 		BE7892E821185BF5002F4521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7892E621185BF5002F4521 /* LaunchScreen.storyboard */; };
 		BEA37C2D211A75CD006D4342 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA37C2C211A75CD006D4342 /* Explore.swift */; };
+		BEBA51782122FAE4002E5543 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA51772122FAE4002E5543 /* UIScrollView+EmptyDataSet.m */; };
 		BEC6E2FC211A8260009861FF /* designableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6E2FB211A8260009861FF /* designableCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,9 @@
 		BE7892E721185BF5002F4521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7892E921185BF5002F4521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA37C2C211A75CD006D4342 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
+		BEBA51752122FAE2002E5543 /* Real Estate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Real Estate-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEBA51762122FAE3002E5543 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		BEBA51772122FAE4002E5543 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		BEC6E2FB211A8260009861FF /* designableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = designableCell.swift; sourceTree = "<group>"; };
 		F45C89C177F9145DEB855D2C /* Pods-Real Estate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Real Estate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Real Estate/Pods-Real Estate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,9 +164,21 @@
 				BE7892E421185BF5002F4521 /* Assets.xcassets */,
 				BE7892E621185BF5002F4521 /* LaunchScreen.storyboard */,
 				BE7892E921185BF5002F4521 /* Info.plist */,
-				BE03A073211B96EE00C62796 /* GoogleService-Info.plist */,
+				BEBA51742122FA6E002E5543 /* Supporting Files */,
 			);
 			path = "Real Estate";
+			sourceTree = "<group>";
+		};
+		BEBA51742122FA6E002E5543 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA51762122FAE3002E5543 /* UIScrollView+EmptyDataSet.h */,
+				BEBA51772122FAE4002E5543 /* UIScrollView+EmptyDataSet.m */,
+				BE03A073211B96EE00C62796 /* GoogleService-Info.plist */,
+				BEBA51752122FAE2002E5543 /* Real Estate-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E2470CD3510B7E7E7D149A03 /* Pods */ = {
@@ -208,6 +224,7 @@
 				TargetAttributes = {
 					BE7892D921185BEC002F4521 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -311,6 +328,7 @@
 				BE028D30211A6E8800DF03ED /* DesignableButton.swift in Sources */,
 				BE043D1921211CD700D502F4 /* SavedVC.swift in Sources */,
 				BE043D1521210A9000D502F4 /* myProteriesVC.swift in Sources */,
+				BEBA51782122FAE4002E5543 /* UIScrollView+EmptyDataSet.m in Sources */,
 				BE028D2B211A69D100DF03ED /* CollectionCell.swift in Sources */,
 				BE03A072211B80DA00C62796 /* DesignableView.swift in Sources */,
 				BE0D4964212183840068C05E /* ViewControllerdd.swift in Sources */,
@@ -460,6 +478,7 @@
 			baseConfigurationReference = F45C89C177F9145DEB855D2C /* Pods-Real Estate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8G9TEZDPEH;
 				INFOPLIST_FILE = "Real Estate/Info.plist";
@@ -469,6 +488,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Nayef.Real-Estate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Real Estate/New Group/Real Estate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +500,7 @@
 			baseConfigurationReference = 48AE2B67AE323B6A37B39097 /* Pods-Real Estate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8G9TEZDPEH;
 				INFOPLIST_FILE = "Real Estate/Info.plist";
@@ -488,6 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Nayef.Real-Estate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Real Estate/New Group/Real Estate-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

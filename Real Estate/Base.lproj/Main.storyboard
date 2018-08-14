@@ -754,7 +754,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvC-Gh-Lae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="182"/>
+            <point key="canvasLocation" x="1398" y="182"/>
         </scene>
         <!--Explore-->
         <scene sceneID="6Wi-wb-YGn">
@@ -790,7 +790,7 @@
         <!--Sign Up-->
         <scene sceneID="h5q-Cr-dLK">
             <objects>
-                <viewController id="JgM-UP-Yfn" customClass="SignUp" customModule="Real_Estate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="JgM-UP-Yfn" customClass="SignUp" customModule="Real_Estate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KtH-pU-KuH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -818,7 +818,7 @@
                                             <action selector="signUpBtn:" destination="JgM-UP-Yfn" eventType="touchUpInside" id="iR6-Im-C1J"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your free account." lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-v0-1pZ">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in or register to acess all feauters " lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-v0-1pZ">
                                         <rect key="frame" x="22" y="35" width="331" height="76"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="76" id="Gvh-kv-sTM"/>
@@ -828,17 +828,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-dV-5nD">
-                                        <rect key="frame" x="15" y="5" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="UJL-Bb-pur"/>
-                                            <constraint firstAttribute="width" constant="20" id="a1p-nb-Fxd"/>
-                                        </constraints>
-                                        <state key="normal" image="icons8-back-52"/>
-                                        <connections>
-                                            <segue destination="noj-LQ-DKY" kind="show" id="thN-HD-4bT"/>
-                                        </connections>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="hE0-4L-OKY">
                                         <rect key="frame" x="15" y="161" width="345" height="119.66666666666669"/>
                                         <subviews>
@@ -884,14 +873,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="qdg-dV-5nD" firstAttribute="top" secondItem="d4r-XS-Zta" secondAttribute="top" constant="5" id="BqD-wA-TMw"/>
                                     <constraint firstItem="1cX-v0-1pZ" firstAttribute="top" secondItem="d4r-XS-Zta" secondAttribute="top" constant="35" id="ahp-Ra-rVO"/>
                                     <constraint firstItem="8r8-WF-Aas" firstAttribute="centerX" secondItem="d4r-XS-Zta" secondAttribute="centerX" id="c6N-UA-iN4"/>
                                     <constraint firstItem="8r8-WF-Aas" firstAttribute="top" secondItem="hE0-4L-OKY" secondAttribute="bottom" constant="35" id="eMk-kF-EGe"/>
                                     <constraint firstItem="hE0-4L-OKY" firstAttribute="top" secondItem="1cX-v0-1pZ" secondAttribute="bottom" constant="50" id="hDd-P2-YLL"/>
                                     <constraint firstItem="hE0-4L-OKY" firstAttribute="centerX" secondItem="d4r-XS-Zta" secondAttribute="centerX" id="la5-8U-7gJ"/>
                                     <constraint firstItem="1cX-v0-1pZ" firstAttribute="centerX" secondItem="d4r-XS-Zta" secondAttribute="centerX" id="oFO-dv-2u3"/>
-                                    <constraint firstItem="qdg-dV-5nD" firstAttribute="leading" secondItem="d4r-XS-Zta" secondAttribute="leading" constant="15" id="vTF-jS-JDO"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -918,7 +905,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3RR-R0-DGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-550" y="-71"/>
+            <point key="canvasLocation" x="577" y="182"/>
         </scene>
         <!--Login-->
         <scene sceneID="Y5q-Yp-6xX">
@@ -956,9 +943,6 @@
                                                 <state key="normal" title="Create now !">
                                                     <color key="titleColor" red="0.12549019607843137" green="0.30980392156862746" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="JgM-UP-Yfn" kind="show" id="ngQ-vv-xQ5"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -1064,7 +1048,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgF-aW-crj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1112" y="-71"/>
+            <point key="canvasLocation" x="-329" y="182"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="sAL-Ue-TCb">
@@ -1716,7 +1700,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-9k-OrF" customClass="DesignableButton" customModule="Real_Estate" customModuleProvider="target">
                                                     <rect key="frame" x="107" y="49" width="160" height="50"/>
-                                                    <color key="backgroundColor" red="0.14117647059999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.14117647058823529" green="0.35686274509803922" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="160" id="H1y-3B-HnR"/>
                                                         <constraint firstAttribute="height" constant="50" id="TZ0-r3-cWS"/>
@@ -2306,7 +2290,6 @@
         <image name="add1" width="14" height="14"/>
         <image name="close" width="14" height="14"/>
         <image name="house" width="1200" height="626"/>
-        <image name="icons8-back-52" width="52" height="52"/>
         <image name="icons8-bathtub-30" width="30" height="30"/>
         <image name="icons8-city-30" width="30" height="30"/>
         <image name="icons8-farm-32" width="32" height="32"/>
@@ -2319,7 +2302,6 @@
         <image name="icons8-surface-26" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ngQ-vv-xQ5"/>
         <segue reference="Reu-dh-OB9"/>
     </inferredMetricsTieBreakers>
 </document>
