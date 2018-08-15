@@ -22,8 +22,8 @@ class MoreVC: UITableViewController {
         let logoutAction = UIAlertAction(title: "Logout?", style: .destructive) { (buttonTapped) in
             do {
                 try Auth.auth().signOut()
-                let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? Login
-                self.present(loginVC!, animated: true, completion: nil)
+                let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "ExploreVC") as? Explore
+                self.present(exploreVC!, animated: true, completion: nil)
             } catch {
                 print(error)
             }

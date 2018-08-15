@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class SavedVC: UIViewController {
     var indexCell : Int = 0
     @IBOutlet weak var collectionView: UICollectionView!
@@ -15,10 +15,18 @@ class SavedVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if Auth.auth().currentUser == nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let authVC = storyboard.instantiateViewController(withIdentifier: "SignUpVC")
+            present(authVC, animated: true, completion: nil)
+        }
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.emptyDataSetSource = self
         collectionView.emptyDataSetDelegate = self
+        
+        
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -46,7 +54,7 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource, DZNEmpt
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        let str = "To Access All Feature Of The App Please Sign In"
+        let str = "You haven't saved any propteries. Start Exploring for propterties to add now."
         let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)]
         return NSAttributedString(string: str, attributes: attrs)
     }
@@ -56,17 +64,16 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource, DZNEmpt
     }
     
     func buttonTitle(forEmptyDataSet scrollView: UIScrollView, for state: UIControlState) -> NSAttributedString? {
-        let str = "Sign In"
+        let str = "Explore"
+
         let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.callout)]
         return NSAttributedString(string: str, attributes: attrs)
     }
     
     func emptyDataSet(_ scrollView: UIScrollView, didTap button: UIButton) {
-     print("I was clicked")
-       
-        let savedVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUp
-    
-        self.present(savedVC, animated: true, completion: nil)
+        let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "ExploreVC")
+        self.present(exploreVC!, animated: true, completion: nil)
+ 
     }
     
     
