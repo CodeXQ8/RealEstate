@@ -1756,7 +1756,7 @@
         <scene sceneID="dG1-gC-PDR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t8E-EA-sC3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Proteries" image="icons8-home-24" selectedImage="icons8-home-26" id="ZZ5-SK-Nl5"/>
+                    <tabBarItem key="tabBarItem" title="My Proteries" image="icons8-home-26" selectedImage="icons8-home-26" id="ZZ5-SK-Nl5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="qnM-Sp-kQn">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
@@ -2309,7 +2309,6 @@
         <image name="icons8-city-30" width="30" height="30"/>
         <image name="icons8-farm-32" width="32" height="32"/>
         <image name="icons8-field-26" width="26" height="26"/>
-        <image name="icons8-home-24" width="24" height="24"/>
         <image name="icons8-home-26" width="26" height="26"/>
         <image name="icons8-search-24" width="24" height="24"/>
         <image name="icons8-stairs-30" width="30" height="30"/>
