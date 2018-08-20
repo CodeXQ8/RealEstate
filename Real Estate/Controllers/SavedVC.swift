@@ -14,13 +14,7 @@ class SavedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if Auth.auth().currentUser == nil {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let authVC = storyboard.instantiateViewController(withIdentifier: "SignUpVC")
-            present(authVC, animated: true, completion: nil)
-        }
-        
+                
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.emptyDataSetSource = self
@@ -54,7 +48,7 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource, DZNEmpt
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        let str = "You haven't saved any propteries. Start Exploring for propterties to add now."
+        let str = "You haven't saved any propteries. Start exploring and save porpteries now."
         let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)]
         return NSAttributedString(string: str, attributes: attrs)
     }

@@ -47,8 +47,10 @@ class DataService {
     
 
     
-    func uploadPost(withImages images: String, forUID uid: String, sendComplete: @escaping (_ status: Bool) -> ()) {
-            REF_PROPERTIES.childByAutoId().updateChildValues(["Images": images, "senderId": uid])
+    func uploadProperty(withImages images: String,Type : String,Bedrooms: String, Baths: String , forUID uid: String, sendComplete: @escaping (_ status: Bool) -> ()) {
+            REF_PROPERTIES.child(uid).updateChildValues(["Images": images,"Type" : Type ,"Bedrooms": Bedrooms, "Baths": Baths , "senderId": uid])
+        
+       // childByAutoId().updateChildValues(["Images": images, "senderId": uid])
             sendComplete(true)
         }
 

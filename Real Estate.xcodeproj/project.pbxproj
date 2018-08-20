@@ -24,6 +24,7 @@
 		BE0C61972122630A00A8E426 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0C61962122630A00A8E426 /* MoreVC.swift */; };
 		BE0D4964212183840068C05E /* ViewControllerdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D4963212183840068C05E /* ViewControllerdd.swift */; };
 		BE0D4966212192EF0068C05E /* AddProteryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D4965212192EF0068C05E /* AddProteryVC.swift */; };
+		BE0E9DEE212A9D2100490D3E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0E9DED212A9D2100490D3E /* Cell.swift */; };
 		BE5773EA211AE48C00744416 /* MoreDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5773E9211AE48C00744416 /* MoreDescription.swift */; };
 		BE7892DE21185BEC002F4521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7892DD21185BEC002F4521 /* AppDelegate.swift */; };
 		BE7892E321185BEC002F4521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7892E121185BEC002F4521 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		BE0C61962122630A00A8E426 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		BE0D4963212183840068C05E /* ViewControllerdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerdd.swift; sourceTree = "<group>"; };
 		BE0D4965212192EF0068C05E /* AddProteryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProteryVC.swift; sourceTree = "<group>"; };
+		BE0E9DED212A9D2100490D3E /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		BE5773E9211AE48C00744416 /* MoreDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDescription.swift; sourceTree = "<group>"; };
 		BE7892DA21185BEC002F4521 /* Real Estate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real Estate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7892DD21185BEC002F4521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				BE028D2A211A69D100DF03ED /* CollectionCell.swift */,
+				BE0E9DED212A9D2100490D3E /* Cell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				BEC6E2FC211A8260009861FF /* designableCell.swift in Sources */,
 				BE028D26211A686200DF03ED /* Home.swift in Sources */,
+				BE0E9DEE212A9D2100490D3E /* Cell.swift in Sources */,
 				BE03A07B211B9EBC00C62796 /* Login.swift in Sources */,
 				BE028D2E211A6E4C00DF03ED /* DesignableImage.swift in Sources */,
 				BE03A079211B9CDB00C62796 /* AuthService.swift in Sources */,
