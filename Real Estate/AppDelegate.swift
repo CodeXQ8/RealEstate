@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,12 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-        if Auth.auth().currentUser == nil {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let authVC = storyboard.instantiateViewController(withIdentifier: "LoginVC")
-            window?.makeKeyAndVisible()
-            window?.rootViewController?.present(authVC, animated: true, completion: nil)
-        }
+        GMSServices.provideAPIKey("AIzaSyBwEHI-WjP-0vE5e4kMg7ytf4i8g3vvRK8")
+        GMSPlacesClient.provideAPIKey("AIzaSyBwEHI-WjP-0vE5e4kMg7ytf4i8g3vvRK8")
+        
+        
+        
+        
+        
+        //        if Auth.auth().currentUser == nil {
+//            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//            let authVC = storyboard.instantiateViewController(withIdentifier: "LoginVC")
+//            window?.makeKeyAndVisible()
+//            window?.rootViewController?.present(authVC, animated: true, completion: nil)
+//        }
         
         return true
     }
